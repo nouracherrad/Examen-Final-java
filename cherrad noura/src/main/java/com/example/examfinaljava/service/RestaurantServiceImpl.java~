@@ -1,0 +1,4 @@
+package com.example.examfinaljava.service;
+
+public class RestaurantServiceImpl {
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" style="-fx-padding: 20;" fx:controller="com.example.examfinaljava.controllrs.IngredientsController">
+    <!-- Titre -->
+    <Label fx:id="titreLabel" text="Construisez votre Plat" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <!-- Section des ingrédients -->
+    <Label text="Ingrédients disponibles :" />
+    <VBox fx:id="ingredientsBox" spacing="5" />
+
+    <!-- Section des suppléments -->
+    <Label text="Suppléments disponibles :" />
+    <VBox fx:id="supplementsBox" spacing="5" />
+
+    <!-- Total -->
+    <Label fx:id="totalLabel" text="Total : 0 DH" style="-fx-font-size: 16px;" />
+
+    <!-- Bouton pour passer au ticket -->
+    <Button text="Valider votre commande" fx:id="terminerButton" onAction="#goToTicketView" />
+</VBox>
